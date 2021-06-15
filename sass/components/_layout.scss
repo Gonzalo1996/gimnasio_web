@@ -1,0 +1,30 @@
+@use 'colors';
+
+@mixin struct {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0,0,0.75);
+    border-radius: 4px;
+    padding: 10px;  
+}
+
+@mixin layout_mobile {
+    display: grid;
+    gap: 10px;
+    grid-template:
+    "navbar" 100px 
+    "header" 90vh  
+    "main" auto    
+    "footer" 400px/
+     auto;
+}
+
+@mixin layout_pc {
+    display: grid;
+    gap: 10px;
+    grid-template:
+    "header header header" 100vh
+    "navbar navbar navbar" 100px   
+    "main main main" auto    
+    "footer footer footer" 400px/
+    200px   auto   200px;
+
+}
